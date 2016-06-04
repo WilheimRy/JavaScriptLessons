@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+
+
+
+            function substitue() {
+
+                if(myValue.length==0)
+                {
+                    alert('No input value');
+                }
+                var myValue=document.getElementById('myTextBox').value;
+                var myTitle=document.getElementById('h1');
+                myTitle.innerHTML=myValue;
+            }
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <h1 id="h1">Original H1</h1>
+    <input type="text" id="myTextBox">
+    <input type="submit" value="Click Me" onclick="substitue()">
+</body>
+</html>
