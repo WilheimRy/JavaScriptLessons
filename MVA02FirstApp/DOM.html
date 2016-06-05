@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            var clickButton = document.getElementById('b1');
+            var myAnchor=document.getElementById('myAnchor');
+            var anchorDestination=myAnchor.href;
+
+            clickButton.onclick = function () {
+                var txtEle = document.getElementById('i1');
+                txtEle.value = anchorDestination;
+                myAnchor.href='conditionTest.html';
+
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+<input id="i1" type="text">
+    <button id="b1">button</button>
+    <p>Changes made to Network Services pages include re-branding,</p>
+    <p>a new layout and navigational structure.</p>
+    <p>The changes will make it easier to find information and complete tasks such
+        as updating your password recovery options.</p>
+    For more information
+    <a id="myAnchor" href="argumentTest.html">argumentHtml</a>
+</body>
+</html>
